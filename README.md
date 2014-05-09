@@ -1,12 +1,12 @@
-# Octoplate
+# Octoplate-cnhalo
 
-Boilerplate for [Octopress](http://octopress.org) using. Twitter Bootstrap 3. Based on [Octostrap3](https://github.com/kAworu/octostrap3).
+Boilerplate for [Octopress](http://octopress.org) using. Twitter Bootstrap 3. Based on [Octostrap3](https://github.com/kAworu/octostrap3) and Octoplate.
 
 ## Install
 
     $ cd octopress
-    $ git clone git://github.com/mjhea0/octoplate.git .themes/octoplate
-    $ rake install['octoplate']
+    $ git clone git://github.com/henryhuang/octoplate-cnhalo.git .themes/octoplate-cnhalo
+    $ rake install['octoplate-cnhalo']
     $ rake generate && rake preview
     $ rake deploy
     
