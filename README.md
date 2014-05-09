@@ -1,6 +1,6 @@
 # Octoplate-cnhalo
 
-Boilerplate for [Octopress](http://octopress.org) using. Twitter Bootstrap 3. Based on [Octostrap3](https://github.com/kAworu/octostrap3) and Octoplate.
+Boilerplate for [Octopress](http://octopress.org) using. Twitter Bootstrap 3. Based on [Octostrap3](https://github.com/kAworu/octostrap3) and [Octoplate](https://github.com/mjhea0/octoplate).
 
 ## Install
 
@@ -14,7 +14,7 @@ Boilerplate for [Octopress](http://octopress.org) using. Twitter Bootstrap 3. Ba
 
 Fix the damn search
 
-## Screenshots
+## Screenshots (Octoplate)
 
 ### Main
 
