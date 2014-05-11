@@ -14,7 +14,7 @@ $(document).ready(function(){
                 // 首页最下面的上下页导航
                 $('.pag_older_label').html($.i18n.prop('pag_older_label'));      
                 $('.pag_newer_label').html($.i18n.prop('pag_newer_label'));   
-                $('#label_blog_archives').html($.i18n.prop('label_blog_archives'));      
+                $('#label_blog_archives').html($.i18n.prop('y'));      
                                                                                
            }
        });

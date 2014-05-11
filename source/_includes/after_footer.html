@@ -1,4 +1,27 @@
 <script src="{{ root_url }}/javascripts/libs/bootstrap-3.0.0/dist/js/bootstrap.min.js"></script>
+<script src="{{ root_url }}/javascripts/libs/bootstrap-3.0.0/js/modal.js"></script>
 <script src="{{ root_url }}/javascripts/modernizr-2.0.js"></script>
-{% include disqus.html %}
+
+{% if page.about == true %}
+	<script type="text/javascript">
+
+		// $("#wblink").click(function(){
+
+		// 	$("#example").modal();  
+
+
+		// })
+
+		// $("#wxlink").click(function(){
+
+		// 	alert("wxlink");
+
+			
+		// })
+
+	</script>
+{% endif %}
+
+{% include baidu_zhanzhang.html %}
+
 {% include custom/after_footer.html %}
