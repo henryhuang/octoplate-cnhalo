@@ -1,0 +1,16 @@
+<div class="col-md-3">
+  <div class="bs-sidebar hidden-print affix-top" role="complementary" style="position: fixed;top: 80px;">
+    <div class="page-header">
+      <h3 style="color:#999999;">最新文章</h3>
+    </div>
+    <ul class="nav" id="sidebar">
+      {% for post in site.posts offset:0 limit:7 %}
+        {% unless post.draft %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {% endunless %}
+        {% endfor %}
+    </ul>
+  <div>
+</div>
