@@ -4,7 +4,7 @@ navbar: Blog
 ---
 
 <div class="row">
-  <div class="page-content {% unless site.default_asides == empty and site.blog_index_asides == empty %}col-md-9{% endunless %}">
+  <div class="page-content {% unless site.default_asides == empty and site.blog_index_asides == empty %}col-md-12{% endunless %}">
     <div class="blog-index">
       {% assign index = true %}
       {% for post in paginator.posts %}
@@ -31,6 +31,8 @@ navbar: Blog
     
   </div>
 
+  <!--
   {% include side_recent_posts.html %}
-
+  -->
+  
 </div>
