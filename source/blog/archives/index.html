@@ -5,11 +5,41 @@ title: 博客归档
 footer: false
 ---
 
+{% for post in site.posts reverse %}
+	{% capture this_year %}
+		{{ post.date | date: "%Y" }}
+	{% endcapture %}
+
+	{% unless year == this_year %}
+    	<a href="#{{ post.date | date: '%Y' }}-ref" class="tag"><span class="label label-default"> {{ post.date | date: "%Y" }}</span></a>
+		{% assign year = this_year %}
+	{% endunless %}
+{% endfor %}
+
 <div id="blog-archives">
 {% for post in site.posts reverse %}
-{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-<article class="page-header">
-  {% include archive_post.html %}
-</article>
+	{% capture this_year %}
+		{{ post.date | date: "%Y" }}
+	{% endcapture %}
+
+	{% unless year == this_year %}
+		<h2 id="{{ post.date | date: '%Y' }}-ref">{{ this_year }}</h2>
+		{% assign year = this_year %}
+	{% endunless %}
+
+
+	<article class="page-header">
+	{% capture category %}
+		{{ post.categories | size }}
+	{% endcapture %}
+		<h5>
+			<span class="meta text-muted">
+				{% include post/date.html %}{{ time }}
+			</span>&nbsp;
+			<a href="{{ root_url }}{{ post.url }}">
+				{{post.title}}
+			</a>
+		</h5>
+	</article>
 {% endfor %}
 </div>
