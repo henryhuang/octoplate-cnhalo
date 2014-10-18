@@ -1,0 +1,40 @@
+---
+layout: page
+navbar: Tags Page
+title: 标签图
+footer: false
+---
+
+<p>{% render_time page rendered at: %}</p>
+
+<div id="visualization"></div>
+
+<script type="text/javascript">
+	
+	var jsonData = {
+    "name": "标签图", 
+    "children": [
+        {
+            "name": "日记", 
+            "size": 3, 
+            "desc": "3篇文章"
+        }, 
+        {
+            "name": "风景", 
+            "size": 3, 
+            "desc": "3篇文章"
+        }, 
+        {
+            "name": "技术", 
+            "size": 3, 
+            "desc": "3篇文章"
+        }
+    ], 
+    "size": 30, 
+    "desc": "三个标签"
+};
+
+	var myFlower = new CodeFlower("#visualization", $(".page-content").width(), 500);
+	myFlower.update(jsonData);
+
+</script>
